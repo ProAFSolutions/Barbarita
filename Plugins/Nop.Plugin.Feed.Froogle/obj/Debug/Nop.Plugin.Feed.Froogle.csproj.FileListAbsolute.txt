@@ -1,0 +1,12 @@
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Feed.Froogle\Views\FeedFroogle\Configure.cshtml
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Feed.Froogle\Description.txt
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Feed.Froogle\web.config
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Feed.Froogle\Content\styles.css
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Feed.Froogle\logo.jpg
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Feed.Froogle\Nop.Plugin.Feed.Froogle.dll.config
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Feed.Froogle\Nop.Plugin.Feed.Froogle.dll
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Feed.Froogle\Nop.Plugin.Feed.Froogle.pdb
+C:\Alex\Git\LiquorStore\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.csproj.App.config
+C:\Alex\Git\LiquorStore\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.csprojResolveAssemblyReference.cache
+C:\Alex\Git\LiquorStore\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.dll
+C:\Alex\Git\LiquorStore\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.pdb

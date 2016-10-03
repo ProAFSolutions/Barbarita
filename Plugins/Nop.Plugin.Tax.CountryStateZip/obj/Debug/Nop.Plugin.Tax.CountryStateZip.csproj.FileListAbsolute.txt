@@ -1,0 +1,11 @@
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Tax.CountryStateZip\Views\TaxCountryStateZip\Configure.cshtml
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Tax.CountryStateZip\Description.txt
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Tax.CountryStateZip\web.config
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Tax.CountryStateZip\logo.jpg
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Tax.CountryStateZip\Nop.Plugin.Tax.CountryStateZip.dll.config
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Tax.CountryStateZip\Nop.Plugin.Tax.CountryStateZip.dll
+C:\Alex\Git\LiquorStore\Presentation\Nop.Web\Plugins\Tax.CountryStateZip\Nop.Plugin.Tax.CountryStateZip.pdb
+C:\Alex\Git\LiquorStore\Plugins\Nop.Plugin.Tax.CountryStateZip\obj\Debug\Nop.Plugin.Tax.CountryStateZip.csproj.App.config
+C:\Alex\Git\LiquorStore\Plugins\Nop.Plugin.Tax.CountryStateZip\obj\Debug\Nop.Plugin.Tax.CountryStateZip.csprojResolveAssemblyReference.cache
+C:\Alex\Git\LiquorStore\Plugins\Nop.Plugin.Tax.CountryStateZip\obj\Debug\Nop.Plugin.Tax.CountryStateZip.dll
+C:\Alex\Git\LiquorStore\Plugins\Nop.Plugin.Tax.CountryStateZip\obj\Debug\Nop.Plugin.Tax.CountryStateZip.pdb
