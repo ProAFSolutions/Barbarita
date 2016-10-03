@@ -1,2 +1,2 @@
 DataProvider: sqlserver
-DataConnectionString: Data Source=localhost;Initial Catalog=liquor_store;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=Alexcardo.2016
+DataConnectionString: Data Source=localhost\MSSQLEXPRESS;Initial Catalog=liquor_store;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=acp
