@@ -1,0 +1,13 @@
+﻿#notExistingElement {
+    color: #fff;
+}
+.ajax-cart-button-wrapper {
+	float: left;
+}
+.ajax-cart-button-wrapper input[type="text"] {
+	margin-right: 0;
+	margin-left: -1px;
+}
+.item-box .ajax-cart-button-wrapper select {
+    margin-left: -5px;
+}

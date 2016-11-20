@@ -1,0 +1,50 @@
+﻿.search-box form > * {
+    float: right !important;
+}
+
+span.search-box-text {
+	margin-right: 0;
+    margin-left: -1px;
+}
+
+#instant-search-categories {
+	margin-right: 0;
+	margin-left: -1px;
+}
+
+input.instant-search-busy,
+span.search-box-text input.instant-search-busy {
+	background-position: 5px center !important;
+}
+
+.instantSearch.resize {
+	margin-left: -119px !important;
+}
+
+.instant-search-item .img-block {
+    float: right;
+}
+.instant-search-item .detail {
+    margin-left: 0;
+    margin-right: 70px;
+}
+
+@media all and (max-width: 980px) and (min-width: 769px) {
+
+}
+
+@media all and (max-width: 768px) and (min-width: 481px) {
+
+  
+}
+
+@media all and (max-width: 480px) {
+    
+    .instantSearch {
+        margin-left: -31px !important;
+    }
+	.instantSearch.resize {
+        margin-left: -65px !important;
+    }
+
+}

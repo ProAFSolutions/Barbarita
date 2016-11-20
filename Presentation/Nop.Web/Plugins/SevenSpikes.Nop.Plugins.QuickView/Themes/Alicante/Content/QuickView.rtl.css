@@ -1,0 +1,17 @@
+﻿.quick-view-button {
+    right: -31px;
+    left: auto;
+    transition: right .3s ease-in-out;
+}
+.item-box:hover .quick-view-butto {
+    right: 12px;
+    left: auto;
+}
+.product-list .item-box:hover .quick-view-button {
+	right: 22px;
+    left: auto;
+}
+.quickViewWindow .product-grid .item-box {
+	margin: 0 5px 10px !important;
+}
+

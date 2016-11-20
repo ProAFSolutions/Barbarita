@@ -1,0 +1,67 @@
+﻿@{
+    Layout = "~/Views/Shared/_Root.Head.cshtml";
+}
+@{
+    var mainSlider = MvcHtmlString.Empty;
+    var homePageSlider = String.Empty;
+
+    var controllerName = System.Web.HttpContext.Current.Request.RequestContext.RouteData.GetRequiredString("controller");
+    var isHomePage = controllerName.Equals("home", StringComparison.InvariantCultureIgnoreCase);
+    if (isHomePage)
+    {
+        mainSlider = @Html.Widget("home_page_main_slider");
+        if (!MvcHtmlString.IsNullOrEmpty(mainSlider))
+            homePageSlider = "with_slider"; // do not wrap in a curly brakets because the mvc throws an error for missing closing bracket.
+    }
+}
+
+@Html.Widget("body_start_html_tag_after")
+@Html.Partial("_Notifications")
+@Html.Action("AdminHeaderLinks", "Common")
+
+<div class="master-wrapper-page @homePageSlider">
+    @Html.Action("JavaScriptDisabledWarning", "Common")
+    @Html.Partial("OldInternetExplorerWarning")
+    <div class="master-wrapper-content">
+        <script type="text/javascript">
+            AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+        </script>
+
+        @Html.Partial("Header")
+
+        @{
+            var menu = @Html.Widget("theme_header_menu");
+        }
+
+        <div class="header-menu">
+            @if (MvcHtmlString.IsNullOrEmpty(menu))
+            {
+                @Html.Action("TopMenu", "Catalog")
+            }
+            else
+            {
+                @menu
+            }
+        </div>
+
+        <div class="main-slider-wrapper">
+            @mainSlider
+            @Html.Widget("home_page_search_widget")
+        </div>
+        @Html.Widget("content_before")
+        @*ajax loading window*@
+        <div class="ajax-loading-block-window" style="display: none">
+            <div class="loading-image">
+            </div>
+        </div>
+
+        <div class="master-column-wrapper">
+            @RenderBody()
+        </div>
+        @Html.Widget("content_after")
+
+        @Html.Action("Footer", "Common")
+    </div>
+</div>
+@Html.Action("EuCookieLaw", "Common")
+@Html.Widget("body_end_html_tag_before")

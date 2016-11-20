@@ -1,0 +1,876 @@
+/* GLOBAL */
+*{
+	direction: rtl;
+}
+.bar-notification > *,
+.ui-dialog-titlebar span,
+.mini-shopping-cart .item .picture,
+.header-logo,
+.search-box .search-box-button,
+.accepted-payment-methods,
+.newsletter-email input[type="button"],
+.footer-disclaimer,
+.center-2,
+.gallery,
+.overview .add-to-wishlist-button,
+.variant-overview .add-to-wishlist-button,
+.overview .add-to-compare-list-button,
+.overview .email-a-friend-button,
+.back-in-stock-subscription .subscribe-button,
+.download-sample a,
+.attributes dd,
+.color-squares .color-container,
+.customer-entered-price .price-range,
+.variant-overview,
+.product-tags-list li, .tags li,
+.giftcard div,
+.product-review-item .review-title,
+.avatar-page .info,
+.checkout-attributes dl > *,
+.cart-footer .cart-collaterals,
+.cart-footer .deals,
+.cart-footer .deals input[type="text"],
+.opc .step-title *,
+.order-details-page .page-title h1,
+.post-title, .news-title,
+.blog-page .tags ul,
+.blogpost-page .tags ul,
+.comment-content,
+.current-time,
+.forum-search-box-text,
+.forum-search-text,
+.forum-search-box-button,
+.forum-search-button,
+.forums-table-section-title > a,
+.forums-table-section-title strong,
+.forum-search-page .basic-search div:first-child *,
+.forum-topic-page .topic-options,
+.topic-post .post-info,
+.profile-info-box .user-details {
+	float: right;
+}
+.bar-notification .close,
+.ui-dialog-titlebar button,
+.header-links-wrapper,
+.social-sharing,
+.footer-powered-by,
+.side-2,
+.link-rss,
+#lbCloseLink,
+.product-details-page .overview,
+.product-review-item .product-review-box,
+.avatar-page .buttons,
+.order-details-page .actions .button-2,
+.cart-footer .totals,
+.cart-footer .shipping,
+.order-details-page .total-info,
+.news-items .read-more,
+.forum-search-box,
+.forums-table-section-title span,
+.pager.lower,
+.private-message-view-page .back-pm-button {
+	float: left;
+}
+#lbBottom,
+.return-request-page tr > *,
+.checkout-page .cart th:nth-child(2),
+.order-details-page .data-table th,
+.order-details-page .order-notes td:first-child,
+.forums-table-section th {
+	text-align: right;
+}
+.ui-dialog-buttonset,
+.mini-shopping-cart .totals,
+.mini-shopping-cart .buttons,
+.listbox .view-all,
+.poll .buttons, .poll-total-votes,
+.poll-total-votes,
+.item-box .prices,
+.item-box .buttons,
+.shopping-cart-page .common-buttons,
+.shopping-cart-page .checkout-buttons,
+.opc .selected-checkout-attributes,
+.opc #checkout-step-confirm-order .buttons,
+.order-details-page .checkout-attributes,
+.order-details-page .actions,
+.news-list-homepage .view-all,
+.forum-search-box .advanced {
+	text-align: left;
+}
+.category-description ul,
+.manufacturer-description ul,
+.full-description ul,
+.topic-block ul,
+.topic-page ul,
+.post-body ul,
+.news-body ul{
+	padding-right: 36px;
+	padding-left: 0;
+}
+.category-description ol,
+.manufacturer-description ol,
+.full-description ol,
+.topic-block ol,
+.topic-page ol,
+.post-body ol,
+.news-body ol{
+	padding-right: 36px;
+	padding-left: 0;
+}
+.fieldset .title,
+.section .title{
+	padding-right: 5px;
+	padding-left: 0;
+}
+.inputs label{
+	margin-left: 10px;
+	margin-right: 0;
+	text-align: left;
+}
+
+.product-review-links a,
+.product-tags-list a,
+.terms-of-service a,
+.accept-privacy-policy a {
+    display: inline-block;
+}
+
+.bar-notification{
+	right: 0;
+	left: auto;
+}
+.bar-notification .content{
+	margin-right: 10px;
+	margin-left: 0;
+}
+
+.ui-dialog-buttonset button{
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+
+/* HEADER & NAVIGATION */
+
+
+
+.admin-header-links{
+	right: 0;
+	left: auto;
+}
+.flyout-cart{
+	right: auto;
+	left: 0;
+	text-align: right;
+}
+.mini-shopping-cart .item .product{
+	margin-right: 56px;
+	margin-left: 0;
+}
+.header-links li{
+	margin-right: 15px;
+	margin-left: 0;
+}
+.header-links li:first-child{
+	margin-right: 0;
+}
+.header-links .cart-qty{
+	padding-right: 20px;
+	padding-left: 0;
+	background: url('../img/icon3.png') right 10px no-repeat;
+}
+.header-selectors-wrapper{
+	float: left;
+	clear: left;
+}
+.header-selectors-wrapper > div{
+	float: left;
+	margin-right: 15px;
+	margin-left: 0;
+}
+.new_select > span{
+	padding: 0 4px 0 30px;
+	background: url('../img/custom-selector.png') no-repeat left center;
+}
+.styleSelect_item{
+	right: -1px !important;
+	left: auto !important;
+}
+.styleSelect_item li span{
+	padding: 2px 5px 2px 2px;
+}
+.language-list img{
+	right: 50%;
+	left: auto;
+	margin-right: -9px;
+	margin-left: 0;
+}
+.search-box{
+	float: left;
+	clear: left;
+}
+.search-box input.search-box-text{
+	float: right;
+	background: #fff url('../img/searchbox-background.png') repeat-x right top;
+	margin-left: -1px;
+	margin-right: 0;
+}
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content img{
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+.header-menu > ul > li {
+	float: right;
+}
+.header-menu .sublist li a {
+	padding: 8px 24px 8px 8px;
+	background: url('../img/rtl-arrow.png') 93% center no-repeat;
+}
+.header-menu .sublist li:hover > a {
+	background-color: #836;
+}
+.header-menu .sublist-wrap .sublist-wrap {
+	left: auto;
+	right: 100%;
+}
+
+
+/* FOOTER */
+
+
+
+.footer-block{
+	float: right;
+	margin-right: 4%;
+	margin-left: 0;
+}
+.footer-block:first-child{
+	margin-right: 0;
+}
+.footer-block li a{
+	padding: 6px 12px 6px 0;
+    background: url('../img/rtl-bullet6.png') right center no-repeat;
+}
+.footer-block-first li{
+	padding: 6px 32px 6px 0;
+}
+.footer-block-first li.phone{
+	background: url('../img/icon-phone.png') no-repeat right center;
+}
+.footer-block-first li.mobile{
+	background: url('../img/icon-cellphone.png') no-repeat right center;
+}
+.footer-block-first li.email{
+	background: url('../img/icon-email.png') no-repeat right center;
+}
+.accepted-payment-methods li{
+	float: right;
+	margin-right: 10px;
+	margin-left: 0;
+}
+.accepted-payment-methods li:first-child{
+	margin-right: 0;
+}
+.social-sharing li{
+	float: right;
+	margin-right: 10px;
+	margin-left: 0;
+}
+.social-sharing li:first-child{
+	margin-right: 0;
+}
+.social-sharing a:first-child{
+	margin-right: 0;
+}
+.newsletter-email input[type="text"]{
+	float: right;
+	margin-left: -1px;
+	margin-right: 0;
+}
+.newsletter-validation,
+.newsletter-result-block{
+	left: 0;
+	right: auto;
+	text-align: left;
+}
+.footer-powered-by,
+.footer-designed-by {
+    float: left;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+
+/* CATEGORY PAGE */
+
+
+
+.listbox .sublist{
+	padding: 8px 20px 12px 10px;
+}
+.listbox .sublist a:before{
+	margin-left: 5px;
+	margin-right: 0;
+}
+.listbox .tags li{
+	float: right;
+	margin-left: 5px;
+	margin-right: 0;
+}
+.breadcrumb li{
+	float: right;
+	margin-right: 5px;
+	margin-left: 0;
+}
+.product-selectors > div{
+	float: right;
+	margin-left: 40px;
+	margin-right: 0;
+}
+.product-selectors select{
+	margin-right: 5px;
+	margin-left: 0;
+}
+.item-box{
+	float: right;
+	margin-right: 10px;
+	margin-left: 0 !important;
+}
+.item-box:nth-child(3n+1){
+	margin-right: 0;
+}
+.product-item,
+.category-item,
+.sub-category-item,
+.manufacturer-item{
+	left: 10px;
+	right: 10px;
+}
+.item-box .product-title,
+.item-box .title{
+	right: 0;
+	left: auto;
+}
+.item-box .picture img{
+	left: 0;
+	right: 0;
+}
+.item-box .details{
+	right: -211px;
+	left: auto;
+}
+.product-item:hover .details{
+	right: 0 !important;
+	left: auto !important;
+}
+.item-box .add-info{
+	right: 0;
+	left: auto;
+}
+.item-box .old-price{
+	margin-left: 5px;
+	margin-right: 0;
+} 
+.product-grid .title{
+	padding-right: 2px;
+	padding-left: 0;
+}
+
+.home-page .product-grid .item-box:nth-child(3n+1), 
+.cross-sells .item-box:nth-child(3n+1) {
+	margin-right: 10px;
+}
+.home-page .product-grid .item-box:nth-child(4n+1),
+.cross-sells .item-box:nth-child(4n+1) {
+	margin-right: 0;
+}
+
+.pager ul{
+	float: left;
+	text-align: left;
+}
+.pager li{
+	margin: 0 0 4px 8px;
+}
+.pager li.next-page * {
+	background-image: url('../img/prev.png');
+}
+.pager li.previous-page * {
+	background-image: url('../img/next.png');
+}
+.pager li.last-page * {
+	background-image: url('../img/prev_first.png');
+}
+.pager li.first-page * {
+	background-image: url('../img/next_last.png');
+}
+
+
+/* PRODUCT PAGE */
+
+
+
+.gallery .picture img,
+.gallery .picture-thumbs img,
+.variant-picture img{
+	left: 0;
+	right: 0;
+}
+.gallery .picture-thumbs a{
+	float: right;
+	margin: 12px 12px 0 0;
+}
+.gallery .picture-thumbs a:nth-child(3n+1){
+	margin-right: 0;
+}
+
+#lbOverlay{
+	right: 0;
+	left: auto;
+}
+#lbImage{
+	right: 0;
+	left: auto;
+}
+#lbPrevLink{
+	right: 0;
+	left: auto;
+}
+#lbNextLink{
+	left: 0;
+	right: auto;
+}
+#lbCaption, #lbNumber{
+	margin-left: 70px;
+	margin-right: 0;
+}
+.overview .buttons div{
+	float: right;
+	margin-right: 9px; /*not 10px because of IE*/
+	margin-left: 0;
+}
+.overview .buttons div:first-child{
+	margin-right: 0;
+}
+.overview .free-shipping,
+.variant-overview .free-shipping {
+	float: left;
+}
+.overview .prices > div,
+.variant-overview .prices > div{
+	float: right;
+	clear: right;
+}
+.overview .old-product-price,
+.variant-overview .old-product-price{
+	margin-left: 15px;
+	margin-right: 0;
+}
+.customer-entered-price .price-input{
+	float: right;
+	margin-left: 10px;
+	margin-right: 0;
+}
+.overview .add-to-cart-panel > *,
+.variant-overview .add-to-cart-panel > *{
+	float: right;
+	margin-left: 5px;
+	margin-right: 0;
+}
+.product-share-button {
+	overflow: hidden;
+}
+.product-share-button > * {
+	float: right;
+}
+.attributes dt{
+	float: right;
+	clear: right;
+	margin-left: 10px;
+	margin-right: 0;
+    background: #eee url('../img/rtl-bullet4.png') 5% center no-repeat;
+}
+.ui-datepicker-header a.ui-datepicker-prev {
+	right: 0;
+    left: auto;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODNBMDk3ODNFRUQ4MTFFMkI1QTlBRTgyMjQxQ0U0NzEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODNBMDk3ODRFRUQ4MTFFMkI1QTlBRTgyMjQxQ0U0NzEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4M0EwOTc4MUVFRDgxMUUyQjVBOUFFODIyNDFDRTQ3MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4M0EwOTc4MkVFRDgxMUUyQjVBOUFFODIyNDFDRTQ3MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv2x/5EAAABZSURBVHjaYvj//z8DGtYC4ldAfAGIdWHiDFgUgrAhEH8A4tdArAcSYwSrxg1Akq+B2Aak8CmQIcWAHxwnxsSXIBNxudEc6sZXMA9hU6QLVXAGGgJgcYAAAwCrw48pVvch+wAAAABJRU5ErkJggg==) center no-repeat;
+}
+.ui-datepicker-header a.ui-datepicker-next {
+	left: 0;
+    right: auto;
+    background: url(data:image/png;base64,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) center no-repeat;
+}
+.color-squares li{
+	float: right;
+	margin: 0 0 0 10px;
+}
+.color-squares li input{
+	float: right;
+	margin: 6px -18px 0 0;
+}
+.checkout-page .edit-address .custom-attributes .option-list li{
+    float: right;
+}
+.variant-picture{
+	float: right;
+	margin-left: 15px;
+	margin-right: 0;
+}
+.ui-tabs .ui-tabs-nav li{
+	float: right;
+	margin-right: 2px;
+	margin-left: 0;
+}
+.ui-tabs .ui-tabs-nav li:first-child{
+	margin-right: 0;
+}
+.product-tags-list li.separator,
+.tags li.separator{
+	margin-left: 8px;
+	margin-right: 0;
+}
+.product-tags-all-page li{
+	margin: 0 0 5px 5px;
+}
+.giftcard label{
+	float: left;
+	margin-right: 10px;
+	margin-left: 0;
+}
+.giftcard label:before {
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+
+/* REVIEWS, WISHLIST, COMPARE LIST */
+
+
+.write-review .review-rating label{
+	margin-left: 10px;
+	margin-right: 0;
+	text-align: left;
+}
+.write-review .review-rating li.first{
+	right: 0;
+	left: auto;
+}
+.write-review .review-rating li.last{
+	left: 0;
+	right: auto;
+}
+.product-review-helpfulness .question{
+	margin-left: 5px;
+	margin-right: 0;
+}
+.product-review-helpfulness .result{
+	margin-right: 10px;
+	margin-left: 0;
+}
+.wishlist-content .button-2,
+.compare-products-table .button-2,
+.compare-products-table-mobile .button-2{
+	margin-left: 5px;
+	margin-right: 0;
+}
+.compare-products-page .clear-list{
+	left: 12px;
+	right: auto;
+}
+.compare-products-table .overview img{
+	left: 0;
+	right: 0;
+}
+
+
+/* REGISTRATION, LOGIN, ACCOUNT */
+
+
+
+.registration-page select + select,
+.account-page select + select{
+	margin-right: 12px;
+	margin-left: 0;
+}
+#username-availabilty{
+	margin: -32px 16px 0 0;
+}
+.login-page .inputs.reversed input{
+	margin-right: -10px;
+	margin-left: 0;
+}
+.address-list-page .buttons,
+.order-list-page .buttons{
+	left: 20px;
+	right: auto;
+}
+.account-page .edit-address .inputs select{
+	margin-left: 0;
+}
+.downloadable-products-page .data-table .product,
+.back-in-stock-subscription-list-page .data-table .product,
+.forum-subscriptions-page .data-table th:nth-child(2n){
+	text-align: right !important;
+}
+.avatar-page .image{
+	float: right;
+	margin-left: 15px;
+	margin-right: 0;
+}
+
+
+/* SHOPPIG CART & CHECKOUT */
+
+
+
+.remove-discount-button,
+.remove-gift-card-button{
+	margin-right: 5px;
+	margin-left: 0;
+}
+.checkout-attributes dl{
+	float: left;
+	text-align: right;
+}
+.checkout-attributes dt:first-child{
+	margin-right: 0;
+}
+.cart-footer .deals .button-2{
+	float: right;
+	margin-right: -1px;
+	margin-left: 0;
+}
+.cart-footer .shipping .button-2{
+	margin-right: 223px;
+	margin-left: 0;
+}
+.shopping-cart-page .addon-buttons{
+	float: left;
+	text-align: left;
+}
+.checkout-page .selected-checkout-attributes{
+	padding-left: 5px;
+	padding-right: 0;
+	text-align: left;
+}
+.checkout-page .address-item{
+	float: right;
+	margin-right: 1%;
+	margin-left: 0;
+}
+.checkout-page .address-item:nth-child(4n+1){
+	margin-right: 0;
+}
+.order-details-page .actions .button-1{
+	float: left;
+	margin-right: 15px;
+	margin-left: 0;
+}
+.order-details-page .page-title a{
+	float: left;
+	margin: 5px 10px 0 0;
+}
+.opc .step-title span{
+	margin-left: 10px;
+	margin-right: 0;
+}
+.opc .buttons{
+	text-align: right;
+}
+
+
+/* TOPICS & SITEMAP */
+
+
+
+.enter-password-form input[type="password"]{
+	float: right;
+	margin-left: -1px;
+	margin-right: 0;
+}
+.enter-password-form input[type="submit"]{
+	float: right !important;
+}
+.sitemap-page a:after{
+	margin-right: 10px;
+	margin-left: 0;
+}
+.topic-footer .topic-options a {
+    margin-left: 5px;
+}
+
+
+/* BLOG & NEWS */
+
+
+
+.post-date, .news-date{
+	float: left;
+	margin-left: 3px;
+	margin-right: 0;
+}
+.blog-page .tags label,
+.blogpost-page .tags label{
+	float: right;
+	margin-left: 5px;
+	margin-right: 0;
+}
+.blog-page .tags li.separator,
+.blogpost-page .tags li.separator{
+	margin-left: 0;
+}
+.comment-info{
+	float: right;
+	margin-left: 15px;
+	margin-right: 0;
+}
+.comment-info .avatar img{
+	left: 0;
+	right: 0;
+}
+
+
+/* FORUM & PROFILE */
+
+.forums-table-section span,
+.forums-table-section label,
+.forums-table-section a,
+.topic-posts span,
+.topic-posts label,
+.topic-posts a,
+.profile-stats span,
+.profile-stats label,
+.profile-stats a,
+.user-last-posts span,
+.user-last-posts label,
+.user-last-posts a {
+    display: inline-block;
+}
+
+.forums-table-section-title .view-all{
+	margin-left: 10px;
+	margin-right: 0;
+}
+.forum-page .link-rss{
+	left: 0;
+	right: auto;
+}
+.forum-page .actions a{
+	margin-left: 10px;
+	margin-right: 0;
+	padding-right: 20px;
+	padding-left: 0;
+}
+.forum-page .newtopic{
+	background: url('../img/forum_icon4.png') right center no-repeat;
+}
+.forum-page .watch-forum{
+	background: url('../img/forum_icon5.png') right center no-repeat;
+}
+.topic-actions .actions a{
+	margin-right: 10px;
+	margin-left: 0;
+	padding-right: 20px;
+	padding-left: 0;
+    background-position: right center;
+}
+.forum-topic-page .edit-topic-link-button,
+.forum-topic-page .delete-topic-link-button,
+.forum-topic-page .move-topic-link-button{
+	background-position: right center;
+}
+.forum-topic-page .edit-post-link-button,
+.forum-topic-page .delete-post-link-button{
+    background-position: right 5px center;
+}
+
+.forum-topic-page .topic-options a{
+	margin-left: 10px;
+	margin-right: 0;
+	padding-right: 20px;
+	padding-left: 0;
+}
+.forum-topic-page .reply-topic-link-button{
+	background-position: right 5px center;
+}
+.forum-topic-page .watch-topic-link-button{
+	background-position: right 5px center;
+}
+.topic-post .manage-post a{
+	float: right;
+	padding: 5px 25px 5px 10px;
+    background-position: right 5px center;
+    border-left: 1px solid #bbb;
+    border-right: none;
+}
+.topic-post .manage-post a:first-child{
+    border-right: 1px solid #bbb;
+}
+.topic-post .user-info{
+	padding-left: 10px;
+	padding-right: 0;
+}
+.topic-post .user-stats span{
+	margin-right: 5px;
+	margin-left: 0;
+}
+.topic-post .post-content,
+.profile-info-box .profile-stats{
+	margin-right: 200px;
+	margin-left: 0;
+}
+.topic-post .post-time{
+    float: right;
+}
+.topic-post .quote-post a{
+	margin-left: 5px;
+	margin-right: 0;
+}
+.topic-post .post-actions {
+    float: left;
+}
+.topic-post .post-body {
+	padding: 0 5px 0 45px;
+}
+.topic-post .post-vote {
+	right: auto;
+	left: 0;
+}
+.forum-edit-page .inputs.reversed {
+    margin-right: 178px;
+    margin-left: 0;
+}
+.forum-edit-page .toolbar,
+.private-message-send-page .toolbar {
+	margin-right: 175px;
+	margin-left: 0;
+}
+.forum-edit-page textarea,
+.private-message-send-page textarea {
+	margin-right: 180px;
+	margin-left: 0;
+}
+
+@media all and (min-width: 981px) {
+
+    .product-list .item-box .product-title {
+        right: 245px;
+        left: auto;
+    }
+
+    .product-list .item-box .picture {
+        float: right;
+    }
+
+    .product-list .item-box .details {
+        margin-left: 0;
+        margin-right: 245px;
+    }
+
+    .product-list .item-box .prices,
+    .product-list .item-box .buttons {
+        text-align: right;
+    }
+
+}

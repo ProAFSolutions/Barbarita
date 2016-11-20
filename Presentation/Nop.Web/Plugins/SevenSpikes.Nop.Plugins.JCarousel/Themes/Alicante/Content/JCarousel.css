@@ -1,0 +1,391 @@
+/*
+* Copyright 2012 Seven Spikes Ltd. All rights reserved. (http://www.nop-templates.com)
+* http://www.nop-templates.com/t/licensinginfo
+*/
+
+
+/*** TITLE & CONTAINERS ***/
+
+
+.nop-jcarousel {
+	position: relative;
+    margin: 20px 0;
+}
+.nop-jcarousel .carousel-title {
+    margin: 0 0 10px;
+    font: italic 32px "Times New Roman", Times, serif;
+    color: #333;
+    text-transform: capitalize;
+}
+.nop-jcarousel .carousel-title span {
+    display: block;
+    padding-right: 80px;
+}
+
+.nop-jcarousel .jcarousel-container {
+	position: static !important;
+}
+
+.nop-jcarousel .jcarousel-clip {
+    overflow: hidden;
+}
+.nop-jcarousel .jcarousel-list-horizontal {
+	margin-left: -1px !important; /*fix asymmetry*/
+	padding: 10px 0 !important;
+}
+
+
+/*** VERTICAL TITLE & CONTAINERS ***/
+
+
+
+.nop-jcarousel .carousel-title.vertical {
+	margin: 0 0 10px;
+	font: italic bold 18px "Times New Roman", Times, serif;
+}
+.nop-jcarousel .carousel-title.vertical span {
+	padding-right: 40px;
+}
+.nop-jcarousel .jcarousel-container-vertical {
+	padding: 5px;
+}
+.nop-jcarousel .jcarousel-clip-vertical {
+    height: 430px; /*two items skin, one item skin is 210px*/
+}
+
+
+/*** JCAROUSEL ITEM BOX ***/
+
+
+
+.nop-jcarousel .jcarousel-item {
+	-webkit-box-sizing: border-box;	
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin-bottom: 10px; /*for more than one item skin*/
+	padding: 10px;
+    position: relative;
+    background: #ddd url(images/transparent-pattern.png) left top;
+}
+.nop-jcarousel .jcarousel-item:before {
+	display: block;
+	padding-top: 124%;
+	content: "";
+}
+.nop-jcarousel .jcarousel-item-horizontal {
+    margin: 0 5px;
+}
+.nop-jcarousel .jcarousel-item-vertical {
+    width: 100%;
+	padding: 5px;
+}
+
+.nop-jcarousel .item-holder {
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.nop-jcarousel .item-picture {
+    width: 100%;
+    height: 100%;
+}
+.nop-jcarousel .item-picture a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nop-jcarousel .item-picture img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+.nop-jcarousel .item-info {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+	-webkit-box-sizing: border-box;	
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.nop-jcarousel .jcarousel-item:hover .item-info {
+	left: 0 !important;
+    opacity: 1;
+}
+.nop-jcarousel .item-info .jcarousel-product-title {
+    display: block;
+	height: 38px;
+	margin-bottom: 12px;
+    overflow: hidden;
+	padding-bottom: 5px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+    color: #fff;
+}
+.nop-jcarousel .item-info .jcarousel-product-name {
+	display: block;
+}
+.nop-jcarousel .item-info .jcarousel-product-name:hover {
+	color: #eee;
+}
+.nop-jcarousel .item-info .short-description {
+    height: 125px;
+    margin-bottom: 10px;
+    overflow: hidden;
+	line-height: 18px;
+    color: #eee;
+}
+.nop-jcarousel .item-info .prices {
+    overflow: hidden;
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+    min-width: 70px;
+    max-width: 90px;
+}
+.nop-jcarousel .item-info .old-price {
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #999;
+    text-decoration: line-through;
+}
+.nop-jcarousel .item-info .actual-price {
+	font-size: 15px;
+	font-weight: bold;
+    color: #fff;
+}
+
+.nop-jcarousel .item-info .product-rating-box{
+    margin-bottom: 5px;
+}
+.nop-jcarousel .item-info .rating {
+	width: 70px;
+	height: 14px;
+	background: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzlGMDRGQUExRjAyMTFFNTlDOEJDRkE4RTBFMDRFMDUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzlGMDRGQUIxRjAyMTFFNTlDOEJDRkE4RTBFMDRFMDUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDOUYwNEZBODFGMDIxMUU1OUM4QkNGQThFMEUwNEUwNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOUYwNEZBOTFGMDIxMUU1OUM4QkNGQThFMEUwNEUwNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmtAUasAAAE9SURBVHjaYvz//z8DOYARl8YdO3ZUgmgPD492bPJMeAwNh2LibQTapsjGxnYPxP7165cS0Nb7xNroJyYmxgDCQBCA00agDbuBbEEkcQUjIyNhRkZGhrNnz74F8h8gyb0DusCNBcqZBcRzZWVleYEYLMDDwwOmrayshIGU8OPHjxmA+DOQnYziR6CtGkBqtZSUlI62tjYDMzMzWPzv378MV69eZXj27NkVIDcUaNsNjMABauYCUid1dXV1pKWlwWJPnz5luHz5MkiTOVDTN5haFjQ//wX6S15UVJThxYsXYAEQGyQGtOAvskJ0jU58fHy8d+7cYXj06NFtkICcnJwqPz8/74cPH5yB3G24oiPw06dPIE2rgWwTEAaxP378iBEt6DbqAZ1UBKQnAP0D83wY0O8FQDqCqLRKCAAEGABd8XuKZO3ajgAAAABJRU5ErkJggg==) 
+                repeat-x;
+}
+.nop-jcarousel .item-info .rating div {
+	height: 14px;
+	background: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUUxMDQyQ0QxRjAxMTFFNTk2MTJFQzBGNEQ0NjFCM0MiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUUxMDQyQ0UxRjAxMTFFNTk2MTJFQzBGNEQ0NjFCM0MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRTEwNDJDQjFGMDExMUU1OTYxMkVDMEY0RDQ2MUIzQyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRTEwNDJDQzFGMDExMUU1OTYxMkVDMEY0RDQ2MUIzQyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pux5FSwAAAC3SURBVHjaYvz//z8DOYARpPH9bEFscpVQuh1dQjD1PQMTHkPDoRgrYMEhrgjE+kjs++gKcNnoh8QOwGfjbpDTkcQVkNjVQByNxH8HxG4wjbOAeC4Q82IxXBiKQeAzECcjO3U1EJsB8RU8gXUFqmY1uh9vALE5Ds1XoHI3cAXOXyCWx6JRHiqHM1SdkPx5G4oZoGLO+DQGIvnZBIpXY4sWdI16QFwETTGfoDgMiAuhcqhplRwAEGAAKgknVRE6q8kAAAAASUVORK5CYII=) 
+                repeat-x;
+}
+
+.nop-jcarousel .item-info .button {
+    display: inline-block;
+    border: 1px solid #000;
+    background: #836;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    bottom: 13px;
+    right: 10px;
+}
+.nop-jcarousel .item-info .button:hover {
+	border: 1px solid #111;
+    background: #947;
+}
+
+
+/*** NAVIGATION ***/
+
+
+
+.nop-jcarousel .jcarousel-prev-horizontal,
+.nop-jcarousel .jcarousel-next-horizontal {
+    position: absolute;
+    top: 5px;
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+}
+.nop-jcarousel .jcarousel-prev-horizontal {
+    right: 31px;
+    background: #836 url('images/prev-horizontal.png') center no-repeat;
+}
+.nop-jcarousel .jcarousel-next-horizontal {
+    right: 0;
+    background: #836 url('images/next-horizontal.png') center no-repeat;
+}
+.nop-jcarousel .jcarousel-prev-horizontal:hover,
+.nop-jcarousel .jcarousel-next-horizontal:hover {
+	border-color: #222;
+	background-color: #947;
+}
+
+.nop-jcarousel .jcarousel-prev-vertical,
+.nop-jcarousel .jcarousel-next-vertical {
+	position: absolute;
+    top: 1px;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.nop-jcarousel .jcarousel-prev-vertical {
+	right: 21px;
+    background: #836 url('images/prev-vertical.png') center no-repeat;
+}
+.nop-jcarousel .jcarousel-next-vertical {
+	right: 0;
+    background: #836 url('images/next-vertical.png') center no-repeat;
+}
+.nop-jcarousel .jcarousel-prev-vertical:hover,
+.nop-jcarousel .jcarousel-next-vertical:hover {
+	border-color: #222;
+	background-color: #947;
+}
+
+.nop-jcarousel .jcarousel-next-disabled-horizontal, 
+.nop-jcarousel .jcarousel-next-disabled-horizontal:hover, 
+.nop-jcarousel .jcarousel-prev-disabled-horizontal, 
+.nop-jcarousel .jcarousel-prev-disabled-horizontal:hover, 
+.nop-jcarousel .jcarousel-prev-disabled-vertical, 
+.nop-jcarousel .jcarousel-prev-disabled-vertical:hover, 
+.nop-jcarousel .jcarousel-next-disabled-vertical, 
+.nop-jcarousel .jcarousel-next-disabled-vertical:hover {
+    opacity: 0.1;
+    filter: alpha(opacity=0);
+    cursor: default;
+    border-color: #000;
+	background-color: #836;
+}
+
+
+/*** ADDITIONAL STYLES ***/
+
+
+/* If the wrap is set to circular and the carousel skin can display more items than there are, the carousel adds additional <li> elements to fill the
+empty spaces. This class is added only for those empty elements. They should not be visible. */
+
+.nop-jcarousel .jcarousel-item-placeholder-horizontal {
+    visibility: hidden;
+}
+
+
+
+
+/*=====================================================
+    
+    TABLETS LANDSCAPE & NETBOOKS
+
+=====================================================*/
+
+@media all and (max-width: 980px) and (min-width: 769px) {
+
+    .nop-jcarousel .jcarousel-container {
+        padding-top: 60px;
+    }
+        .nop-jcarousel .carousel-title + .jcarousel-container {
+            padding-top: 0;
+        }
+
+    .nop-jcarousel .jcarousel-prev-horizontal, .nop-jcarousel .jcarousel-next-horizontal {
+        top: 0;
+    }
+    .nop-jcarousel .jcarousel-prev-horizontal, .nop-jcarousel .jcarousel-next-horizontal {
+        padding: 6px;
+    }
+    .nop-jcarousel .jcarousel-next-horizontal {
+        right: 3px;
+    }
+    .nop-jcarousel .jcarousel-prev-horizontal {
+        right: 50px;
+    }
+    .nop-jcarousel .item-info {
+        display: none !important;
+    }
+
+}
+
+
+
+/*=====================================================
+    
+    TABLETS PORTRAIT & SMARTPHONES LANDSCAPE
+
+=====================================================*/
+
+@media all and (max-width: 768px) and (min-width: 481px) {
+
+    .nop-jcarousel .jcarousel-container {
+        padding-top: 60px;
+    }
+        .nop-jcarousel .carousel-title + .jcarousel-container {
+            padding-top: 0;
+        }
+
+    .nop-jcarousel .jcarousel-prev-horizontal, .nop-jcarousel .jcarousel-next-horizontal {
+        top: 0;
+    }
+    .nop-jcarousel .jcarousel-prev-horizontal, .nop-jcarousel .jcarousel-next-horizontal {
+        padding: 6px;
+    }
+    .nop-jcarousel .jcarousel-next-horizontal {
+        right: 3px;
+    }
+    .nop-jcarousel .jcarousel-prev-horizontal {
+        right: 50px;
+    }
+    .nop-jcarousel .item-info {
+        display: none !important;
+    }
+
+}
+
+
+
+/*=====================================================
+    
+    SMALLER MOBILE DEVICES
+
+=====================================================*/
+
+@media all and (max-width: 480px) {
+
+    .nop-jcarousel .carousel-title {
+        margin: 0 0 20px;
+        padding: 0 15px;
+    }
+    .nop-jcarousel .carousel-title span {
+        padding: 0;
+        text-align:center;
+    }
+    .nop-jcarousel .jcarousel-container {
+        padding-top: 55px !important;
+        position: relative !important;
+    }
+
+    .nop-jcarousel .jcarousel-prev-horizontal, .nop-jcarousel .jcarousel-next-horizontal {
+        top: 10px;
+        padding: 6px;
+        left: 50%;
+        right: inherit;
+    }
+    .nop-jcarousel .jcarousel-prev-horizontal {
+        margin-left: -48px;
+    }
+    .nop-jcarousel .item-info {
+        display: none !important;
+    }
+
+}

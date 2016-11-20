@@ -1,0 +1,22 @@
+
+/*.master-wrapper-page {
+    background: url('../img/background1.jpg') no-repeat center top;
+}*/
+
+.item-box {
+    width: 226px !important;
+}
+.item-box .details {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BC000000,endColorstr=#BC000000);
+}
+
+.nop-jcarousel .item-info {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BC000000,endColorstr=#BC000000);
+}
+
+.footer {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80CACACA,endColorstr=#80CACACA);
+}
+.bottom {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF);
+}
