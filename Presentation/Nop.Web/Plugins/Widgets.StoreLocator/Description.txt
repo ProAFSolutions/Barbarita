@@ -1,0 +1,9 @@
+Group: Widgets
+FriendlyName: StoreLocator
+SystemName: Widgets.StoreLocator
+Version: 1.01
+SupportedVersions: 3.80
+Author: nop4you.com
+DisplayOrder: 1
+FileName: Nop.Plugin.Widgets.StoreLocator.dll
+Description: Use Store Locator for nopCommerce to show your stores on a map. Give customers possibility to find your store without searching it.

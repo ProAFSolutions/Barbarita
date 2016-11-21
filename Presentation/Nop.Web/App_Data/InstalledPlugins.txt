@@ -35,3 +35,5 @@ SevenSpikes.Nop.Plugins.ProductRibbons
 SevenSpikes.Nop.Plugins.NopQuickTabs
 SevenSpikes.Nop.Plugins.QuickView
 SevenSpikes.Theme.Alicante
+Widgets.BsLiveChat
+Widgets.StoreLocator
