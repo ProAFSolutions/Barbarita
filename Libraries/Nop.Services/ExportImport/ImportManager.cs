@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,6 +24,7 @@ using Nop.Services.Shipping;
 using Nop.Services.Tax;
 using Nop.Services.Vendors;
 using OfficeOpenXml;
+using System.Globalization;
 
 namespace Nop.Services.ExportImport
 {
@@ -880,7 +881,16 @@ namespace Nop.Services.ExportImport
                     if (isNew && properties.All(p => p.PropertyName != "ProductTypeId"))
                         product.ProductType = ProductType.SimpleProduct;
 
+                    //Capitalizing words coming from the old system                    
+                    product.Name = CultureInfo.InvariantCulture.TextInfo.T‌​oTitleCase(product.Name.ToLower());
+                    product.ShortDescription = CultureInfo.InvariantCulture.TextInfo.T‌​oTitleCase(product.ShortDescription.ToLower());
+                    product.FullDescription = CultureInfo.InvariantCulture.TextInfo.T‌​oTitleCase(product.FullDescription.ToLower());
+
+
                     product.UpdatedOnUtc = DateTime.UtcNow;
+                    
+                    //Showing products automatically after being imported
+                    product.Published = product.VisibleIndividually = product.StockQuantity > 0;
 
                     if (isNew)
                     {
