@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Themes/Alicante/Content/sass/custom.css",
+    "inputFile": "Themes/Alicante/Content/sass/custom.scss"
+  },
+  {
+    "outputFile": "Themes/Alicante/Content/custom/custom.css",
+    "inputFile": "Themes/Alicante/Content/custom/custom.scss"
+  }
+]

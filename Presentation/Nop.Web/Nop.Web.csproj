@@ -474,6 +474,7 @@
     </Content>
     <Content Include="App_Data\Install\SqlServer.Indexes.sql" />
     <Content Include="App_Data\Localization\language_pack.xml" />
+    <Content Include="App_Data\Settings.txt" />
     <Content Include="Content\BBEditor\ed.js" />
     <Content Include="Content\BBEditor\images\bold.gif" />
     <Content Include="Content\BBEditor\images\code.gif" />
@@ -516,6 +517,10 @@
     <Content Include="Scripts\fineuploader\templates\simple-thumbnails.html" />
     <Content Include="favicon.ico" />
     <Content Include="Scripts\fineuploader\LICENSE" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\fineuploader\iframe.xss.response-4.2.2.js" />
     <Content Include="Scripts\fineuploader\jquery.fineuploader-4.2.2.js" />
@@ -598,6 +603,12 @@
     <Content Include="Themes\Alicante\Content\img\table-plus.png" />
     <Content Include="Themes\Alicante\Content\img\transparent-pattern.png" />
     <Content Include="Themes\Alicante\Content\img\votes.png" />
+    <Content Include="Themes\Alicante\Content\custom\custom.css">
+      <DependentUpon>custom.scss</DependentUpon>
+    </Content>
+    <Content Include="Themes\Alicante\Content\custom\custom.min.css">
+      <DependentUpon>custom.css</DependentUpon>
+    </Content>
     <Content Include="Themes\Alicante\Content\scripts\Alicante.js" />
     <Content Include="Themes\Alicante\preview.jpg" />
     <Content Include="Themes\DefaultClean\Content\css\ie8.css" />
@@ -1011,6 +1022,7 @@
     <Content Include="Themes\Alicante\Views\ShoppingCart\Wishlist.cshtml" />
     <Content Include="Themes\Alicante\Views\ShoppingCart\_OrderReviewData.cshtml" />
     <Content Include="Themes\Alicante\Views\Web.config" />
+    <Content Include="Themes\Alicante\Content\custom\custom.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\samples\" />
