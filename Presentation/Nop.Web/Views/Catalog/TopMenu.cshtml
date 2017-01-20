@@ -48,7 +48,7 @@
     }
     @foreach (var topic in Model.Topics)
     {
-        <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+        <li><a class="fa fa-glass" href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
     }
     @if (rootCategories.Count == 0 && Model.Topics.Count == 0)
     {
@@ -96,7 +96,7 @@
             if (Model.NewProductsEnabled)
             {
                 <li>
-                    <a href="@Url.RouteUrl("NewProducts")">@T("Products.NewProducts")</a>
+                    <a class="fa fa-glass" href="@Url.RouteUrl("NewProducts")">@T("Products.NewProducts")</a>
                 </li>
             }
             <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a> </li>

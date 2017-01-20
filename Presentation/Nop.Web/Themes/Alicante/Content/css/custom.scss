@@ -1,0 +1,154 @@
+﻿
+$color_blue: #3D5CA5;
+$color_dark_blue: #3150A0;
+$color_light_blue: rgba(#D0D1E8, 0.5);
+
+body {
+
+    .listbox .list > li.active > a, 
+    .listbox .list > li > a.active,
+    .item-box input[type="button"], 
+    .item-box .buynow-button,
+    .header-menu > ul > li:hover > a, 
+    .header-menu > ul > li:hover > span,
+    .header-menu .sublist li:hover > a,
+    .listbox .sublist a:hover,
+    .nop-jcarousel .item-info .button,
+    .overview .add-to-cart-button, 
+    .variant-overview .add-to-cart-button,
+    .write-review .button-1
+     {       
+        background: $color_blue;
+        border: 1px solid $color_dark_blue;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;      
+        
+        &:hover{
+            background: $color_blue;
+            opacity: 0.8;
+        }
+    }
+
+    .header-menu .sublist li a{
+        background: none;
+    }
+
+    .nop-jcarousel .jcarousel-next-horizontal{
+      
+    }
+
+    .footer-block h3:after {
+        background: $color_dark_blue;
+    }
+   
+    .master-wrapper-page {
+
+        .master-wrapper-content{
+
+            .header{
+
+                .header-links{
+                    #topcartlink{
+                        .fa-shopping-cart{
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+            }
+
+            .header-menu{
+                background: $color_light_blue;
+
+                ul{
+                    li{
+                        margin: 5px;
+                    }
+                }
+            }
+
+            .top-menu{
+
+                li{                   
+
+                   .fa-glass{               
+                        padding-right: 5px;
+                    }
+                }
+
+            }
+            
+            .master-column-wrapper{
+
+                .item-box{
+                     background: none;
+                     background-color: $color_light_blue;
+                }
+            }
+
+            .footer{
+                background: $color_blue;
+                opacity: .9;
+                
+
+                h3, li, a{
+                    color: white;
+                }
+
+                h3:after{
+                    background: white;
+                }
+
+                .footer-block li a{
+                    background: none;
+                }
+
+                .footer-upper{
+                    .contact-us{
+                        i{
+                            font-size: 16px;
+                            padding-right: 5px;
+
+                            &.fa-mobile-phone{
+                                font-size: 22px;
+                            }
+                        }
+                    }
+
+                    .payment{
+
+                        li{
+                            float: left;
+                            margin: 3px;
+
+                             i{
+                                font-size: 34px;
+                            }
+                        }
+                    }
+
+                    .social-media{
+
+                        margin-top: 45px;
+                        
+                        ul{
+                            padding: 0px;
+                        }
+
+                        i{
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                 background: white;
+            }
+        }
+    }
+
+   
+
+}

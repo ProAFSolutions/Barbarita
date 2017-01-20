@@ -14,7 +14,7 @@
         @{
             if (category.SubCategories.Count > 0)
             {
-                <a href="@Url.RouteUrl("Category", new { SeName = category.SeName })">@category.Name</a>
+                <a class="category-name" href="@Url.RouteUrl("Category", new { SeName = category.SeName })"><i class="icon-wine"></i> @category.Name</a>
                 <div class="plus-button"></div>
                 <div class="sublist-wrap">
                     <ul class="sublist">
@@ -29,11 +29,11 @@
             {
                 if (category.NumberOfProducts.HasValue)
                 {
-                    <a href="@Url.RouteUrl("Category", new { SeName = category.SeName })">@category.Name @T("Categories.TotalProducts", category.NumberOfProducts.Value)</a>
+                    <a href="@Url.RouteUrl("Category", new { SeName = category.SeName })"><i class="icon-wine"></i> @category.Name @T("Categories.TotalProducts", category.NumberOfProducts.Value)</a>
                 }
                 else
                 {
-                    <a href="@Url.RouteUrl("Category", new { SeName = category.SeName })">@category.Name</a>
+                    <a href="@Url.RouteUrl("Category", new { SeName = category.SeName })"><i class="icon-wine"></i> @category.Name</a>
                 }
             }
         }

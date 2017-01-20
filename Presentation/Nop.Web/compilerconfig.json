@@ -6,5 +6,25 @@
   {
     "outputFile": "Themes/Alicante/Content/custom/custom.css",
     "inputFile": "Themes/Alicante/Content/custom/custom.scss"
+  },
+  {
+    "outputFile": "Themes/Alicante/Content/custom/all-in-one.css",
+    "inputFile": "Themes/Alicante/Content/custom/all-in-one.scss"
+  },
+  {
+    "outputFile": "Themes/Alicante/Content/sass/all-in-one.rtl.css",
+    "inputFile": "Themes/Alicante/Content/sass/all-in-one.rtl.scss"
+  },
+  {
+    "outputFile": "Themes/Alicante/Content/sass/all-in-one.css",
+    "inputFile": "Themes/Alicante/Content/sass/all-in-one.scss"
+  },
+  {
+    "outputFile": "Themes/Alicante/Content/css/custom.css",
+    "inputFile": "Themes/Alicante/Content/css/custom.scss"
+  },
+  {
+    "outputFile": "Themes/Alicante/Content/css/scss/font-awesome.css",
+    "inputFile": "Themes/Alicante/Content/css/scss/font-awesome.scss"
   }
 ]

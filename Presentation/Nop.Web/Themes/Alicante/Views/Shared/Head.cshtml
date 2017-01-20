@@ -16,6 +16,14 @@
         Html.AppendCssFileParts("~/Themes/Alicante/Content/css/ie8-fix.css");
     }
 
+    //if (supportRtl)
+    //{
+    //    Html.AppendCssFileParts("~/Themes/Alicante/Content/sass/all-in-one.rtl.css");
+    //}
+    //else {
+    //    Html.AppendCssFileParts("~/Themes/Alicante/Content/sass/all-in-one.css");
+    //}
+
     if (supportRtl)
     {
         Html.AppendCssFileParts("~/Themes/Alicante/Content/CSS/480.rtl.css");
@@ -34,7 +42,8 @@
     }
 
     Html.AppendCssFileParts("~/Themes/Alicante/Content/CSS/styles.css");
-    Html.AppendCssFileParts("~/Themes/Alicante/Content/custom/custom.css");
+    Html.AppendCssFileParts("~/Themes/Alicante/Content/CSS/scss/font-awesome.css");
+    Html.AppendCssFileParts("~/Themes/Alicante/Content/CSS/custom.css");
 
     Html.AddScriptParts("~/Plugins/SevenSpikes.Core/Scripts/SevenSpikesExtensions.min.js");
     if (isIeEightOrLess)
@@ -43,5 +52,5 @@
         Html.AddScriptParts("~/Plugins/SevenSpikes.Core/Scripts/respond.min.js");
     }
     Html.AddScriptParts("~/Plugins/SevenSpikes.Core/Scripts/footable.js");
-    Html.AddScriptParts("~/Themes/Alicante/Content/scripts/Alicante.js");   
+    Html.AddScriptParts("~/Themes/Alicante/Content/scripts/Alicante.js");
 }
