@@ -41,5 +41,10 @@ namespace Nop.Core
         /// Get or set value indicating whether we're in admin area
         /// </summary>
         bool IsAdmin { get; set; }
+
+        /// <summary>
+        /// Get or set value indicating whether we're in admin area
+        /// </summary>
+        bool IsStoreManager { get; }
     }
 }
