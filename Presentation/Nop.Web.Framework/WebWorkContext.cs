@@ -486,6 +486,14 @@ namespace Nop.Web.Framework
         /// </summary>
         public virtual bool IsAdmin { get; set; }
 
+        public bool IsStoreManager
+        {
+            get
+            {
+                return this.CurrentCustomer.CustomerRoles.SingleOrDefault(R => R.SystemName == "StoreManager") != null;
+            }
+        }
+
         #endregion
     }
 }

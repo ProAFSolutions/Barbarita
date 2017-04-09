@@ -13,6 +13,20 @@
 
 @helper RenderMenuItem(Nop.Web.Framework.Menu.SiteMapNode item, bool supportRtl)
 {
+    //New code added by ProAF in order to get the 'StoreManager' custom role we set up
+    var isStoreManager = EngineContext.Current.Resolve<IWorkContext>().IsStoreManager;
+    var storeManagerAllowedSections = new Dictionary<string, bool>();
+    storeManagerAllowedSections["Dashboard"] = true;
+    storeManagerAllowedSections["Catalog"] = true;
+    storeManagerAllowedSections["Sales"] = true;
+    storeManagerAllowedSections["Customers"] = false;
+    storeManagerAllowedSections["Promotions"] = true;
+    storeManagerAllowedSections["Content Management"] = false;
+    storeManagerAllowedSections["Configuration"] = false;
+    storeManagerAllowedSections["System"] = false;
+    storeManagerAllowedSections["Help"] = false;
+    storeManagerAllowedSections["nopTemplates"] = false;
+
     string url = null;
     if (!string.IsNullOrEmpty(item.ControllerName) && !string.IsNullOrEmpty(item.ActionName))
     {
@@ -26,50 +40,54 @@
 
     if (!String.IsNullOrEmpty(url))
     {
-        <li @(isActive ? Html.Raw("class=\"active current-active-item\"") : null)>
-            <a href="@url" class="menu-item-link">
-                @if (!String.IsNullOrEmpty(item.IconClass))
-                {
-                    <text>
-                        <i class="fa @Url.Content(item.IconClass)"></i>
-                    </text>
-                }
-                <span class="menu-item-title">@item.Title</span>
-            </a>
-        </li>
+            <li @(isActive ? Html.Raw("class=\"active current-active-item\"") : null)>
+                <a href="@url" class="menu-item-link">
+                    @if (!String.IsNullOrEmpty(item.IconClass))
+                    {
+                        <text>
+                            <i class="fa @Url.Content(item.IconClass)"></i>
+                        </text>
+                    }
+                    <span class="menu-item-title">@item.Title</span>
+                </a>
+            </li>
     }
     else
-    {
-        <li class="treeview @(isActive ? Html.Raw("active current-active-item") : null)">
-            <a href="#">
-                @if (!String.IsNullOrEmpty(item.IconClass))
-                {
-                    <text>
-                        <i class="fa @Url.Content(item.IconClass)"></i>
-                    </text>
-                }
-                <span>@item.Title</span>
-                @if (supportRtl)
-                {
-                    <i class="fa fa-angle-right pull-right"></i>
-                }
-                else
-                {
-                    <i class="fa fa-angle-left pull-right"></i>
-                }
-            </a>
-
-            @{ var childNodes = item.ChildNodes.Where(x => x.Visible).ToList(); }
-            @if (childNodes.Any())
-            {
-                <ul class="treeview-menu">
-                    @foreach (var childItem in childNodes)
+    { 
+   
+       if(!isStoreManager || (isStoreManager && storeManagerAllowedSections.ContainsKey(item.SystemName) && storeManagerAllowedSections[item.SystemName]))
+        {
+            <li class="treeview @(isActive ? Html.Raw("active current-active-item") : null)">
+                <a href="#">
+                    @if (!String.IsNullOrEmpty(item.IconClass))
                     {
-                        @RenderMenuItem(childItem, supportRtl)
+                        <text>
+                            <i class="fa @Url.Content(item.IconClass)"></i>
+                        </text>
                     }
-                </ul>
-            }
-        </li>
+                    <span>@item.Title</span>
+                    @if (supportRtl)
+                    {
+                        <i class="fa fa-angle-right pull-right"></i>
+                    }
+                    else
+                    {
+                        <i class="fa fa-angle-left pull-right"></i>
+                    }
+                </a>
+
+                @{ var childNodes = item.ChildNodes.Where(x => x.Visible).ToList(); }
+                @if (childNodes.Any())
+                {
+                    <ul class="treeview-menu">
+                        @foreach (var childItem in childNodes)
+                        {
+                            @RenderMenuItem(childItem, supportRtl)
+                        }
+                    </ul>
+                }
+            </li>
+        }
     }
 }
 
@@ -78,7 +96,7 @@
         //standard (default) items
         var rootNode = siteMap.RootNode;
 
-        //plugins
+        //plugins      
         var adminMenuPlugins = EngineContext.Current.Resolve<Nop.Core.Plugins.IPluginFinder>()
             .GetPlugins<IAdminMenuPlugin>()
             .ToList();
