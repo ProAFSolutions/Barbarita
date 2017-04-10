@@ -108,8 +108,9 @@
             else
             {
                 @Html.Widget("admin_header_before", area: "Admin")
-                <div class="main-header">
+                <div class="main-header">                    
                     <a href="@Url.Content("~/admin")" class="logo">
+                        <img src="~/Administration/Content/images/logo.png" width="180" />
                         <!-- mini logo for sidebar mini 50x50 pixels -->
                         <span class="logo-mini"></span>
                         <!-- logo for regular state and mobile devices -->
@@ -217,17 +218,9 @@
                     @RenderBody()
                 </div>
             </div>
-            <div class="main-footer clearfix">
-                @if (!EngineContext.Current.Resolve<StoreInformationSettings>().HidePoweredByNopCommerce)
-                {
-                    @*Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
-                        Please find more info at http://www.nopcommerce.com/copyrightremoval.aspx*@
-                    <div class="pull-left">
-                        Powered by <a href="http://www.nopcommerce.com/?utm_source=admin-panel&utm_medium=footer&utm_campaign=admin-panel" target="_blank">nopCommerce</a>
-                    </div>
-                }
+            <div class="main-footer clearfix">                
                 <div class="pull-right hidden-xs">
-                    <b>nopCommerce version @NopVersion.CurrentVersion</b>
+                    <b>© @(DateTime.Now.Year) Barbaritas Liquors</b>
                 </div>
                 <div class="text-center">
                     @(EngineContext.Current.Resolve<Nop.Services.Helpers.IDateTimeHelper>().ConvertToUserTime(DateTime.Now).ToString("f"))

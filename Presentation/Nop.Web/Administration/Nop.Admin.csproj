@@ -498,6 +498,7 @@
     <Content Include="Content\fontAwesome\css\font-awesome-4.6.3.min.css" />
     <Content Include="Content\images\logo-mini.png" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logoNop.png" />
     <Content Include="Content\images\search-icon.png" />
     <Content Include="Content\ionicons\css\ionicons-2.0.1.css" />
     <Content Include="Content\ionicons\css\ionicons-2.0.1.min.css" />

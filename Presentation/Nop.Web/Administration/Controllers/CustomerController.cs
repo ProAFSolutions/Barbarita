@@ -40,6 +40,7 @@ using Nop.Web.Framework;
 using Nop.Web.Framework.Controllers;
 using Nop.Web.Framework.Kendoui;
 using Nop.Web.Framework.Mvc;
+using Nop.Core.Infrastructure;
 
 namespace Nop.Admin.Controllers
 {
@@ -764,7 +765,7 @@ namespace Nop.Admin.Controllers
 
         public ActionResult List()
         {
-            if (!_permissionService.Authorize(StandardPermissionProvider.ManageCustomers))
+            if (!_permissionService.Authorize(StandardPermissionProvider.ManageCustomers) || EngineContext.Current.Resolve<IWorkContext>().IsStoreManager)
                 return AccessDeniedView();
 
             //load registered customers by default

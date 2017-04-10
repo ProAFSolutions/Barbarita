@@ -11,6 +11,7 @@ using Nop.Services.Security;
 using Nop.Web.Framework.Controllers;
 using Nop.Web.Framework.Kendoui;
 using Nop.Web.Framework.Mvc;
+using Nop.Core.Infrastructure;
 
 namespace Nop.Admin.Controllers
 {
@@ -87,8 +88,8 @@ namespace Nop.Admin.Controllers
         }
 
         public ActionResult List()
-        {
-            if (!_permissionService.Authorize(StandardPermissionProvider.ManageSettings))
+        {            
+            if (!_permissionService.Authorize(StandardPermissionProvider.ManageSettings) || EngineContext.Current.Resolve<IWorkContext>().IsStoreManager)
                 return AccessDeniedView();
 
             //we just redirect a user to the customer settings page
